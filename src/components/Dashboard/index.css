@@ -1,0 +1,60 @@
+.referralCode {
+  position: relative;
+  width: max-content;
+  padding: 20px 75px;
+  letter-spacing: 15px;
+}
+.referralCode::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: var(--gradient1);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10rem;
+}
+.dashboard > .wallet {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  box-shadow: 0 0 10px #ddd;
+  height: 148px;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.wallet > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wallet:first-child {
+  color: var(--purple);
+}
+.amount {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--black);
+}
+.withdraw > a {
+  width: 148px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  background-color: var(--purple);
+}
+
+.dashboard > .referal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.referal > div {
+  color: var(--purple);
+}
